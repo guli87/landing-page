@@ -39,6 +39,7 @@ nav {
 }
 
 /* container */
+
 .top-section {
   flex-wrap: wrap;
 }
@@ -166,6 +167,9 @@ nav {
 .card-block-system .img-block {
   margin-right: auto;
 }
+.merchant-section .card-block-system .img-block {
+  margin-right: auto;
+}
 .card-block-risk .img-block {
   margin-right: auto;
 }
@@ -240,6 +244,45 @@ nav {
   margin-right: 24px;
 }
 
+/* inside pages */
+
+/* merchant managment system page */
+.merchant-section .top-section__left {
+  width: auto;
+}
+.merchant-section .top-section__left h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  opacity: 0.84;
+}
+.merchant-section .top-section__left p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  opacity: 0.84;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.merchant-section .top-section {
+  padding: 0 16px 80px;
+}
+.merchant-section .top-section__right {
+  margin-bottom: 90px;
+  width: auto;
+}
+
+.merchant-section .top-section__right img {
+  margin-left: auto;
+  margin-top: 67px;
+  margin-right: auto;
+  height: 191px;
+  display: flex;
+}
+
 /* media query */
 
 @media (min-width: 1056px) {
@@ -300,10 +343,40 @@ nav {
     line-height: 83px;
     text-align: left;
   }
+  .merchant-section .top-section__left {
+    width: 45%;
+  }
+  .merchant-section .top-section__right {
+    width: 55%;
+  }
+  .merchant-section .top-section__left h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    opacity: 0.84;
+  }
 
+  .merchant-section .top-section__left p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    opacity: 0.84;
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .merchant-section .top-section__right img {
+    margin-left: 70px;
+    margin-top: 0;
+    margin-right: auto;
+    height: 348px;
+    display: flex;
+  }
   .main-section {
     background-color: #f8f8fa;
-    padding: 80px 16px;
+    padding: 80px 16px 120px;
   }
 
   .card-block {
@@ -311,10 +384,18 @@ nav {
     padding: 90px 64px;
     flex-direction: row;
   }
+
   .img-block {
     width: auto;
   }
-
+  .merchant-section .card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
   .card-title {
     font-style: normal;
     font-weight: 700;
@@ -346,6 +427,9 @@ nav {
   }
   .card-block-system .img-block {
     margin-right: 64px;
+  }
+  .merchant-section .card-block-system .img-block {
+    margin-right: 120px;
   }
   .card-block-risk .img-block {
     margin-right: 64px;

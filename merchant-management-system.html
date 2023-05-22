@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payme Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,400i,500,600,600i,700,900"
+      rel="stylesheet"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/images/logo.svg" alt="Nexio" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">...</div>
+    </div>
+
+    <!-- Begin page content -->
+
+    <main class="flex-shrink-0 merchant-section">
+      <div class="nav-top"></div>
+      <section class="top-section">
+        <div class="top-section__left">
+          <h1>Track your merchant activities</h1>
+          <p>
+            System allows to track single merchant performance and manage
+            merchant lifecycle.
+          </p>
+        </div>
+        <div class="top-section__right">
+          <img src="assets/images/merchant-img.svg" />
+        </div>
+      </section>
+
+      <section class="main-section">
+        <div class="card-block card-block-system">
+          <div class="card-inner-left">
+            <img src="assets/images/MacBook-Pro16.svg" class="img-block" />
+          </div>
+          <div class="card-inner-right">
+            <h2 class="card-title">
+              Comprehensive analytics and ready-made reporting
+            </h2>
+            <p class="card-body">
+              System provides customizable visualized data and analytics based
+              on the transaction events.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-block card-block-payment">
+          <div class="card-inner-left">
+            <h2 class="card-title">Merchant portal</h2>
+            <p class="card-body">
+              Troubleshoot transactions easily and save resources by providing
+              all necessary information to your merchants.
+            </p>
+          </div>
+          <div class="card-inner-right">
+            <img
+              src="assets/images/img-merchant2.svg"
+              class="m-auto d-flex img-block"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer mt-auto bg-body-light">
+      <div class="container">
+        <div class="foot-logo">
+          <img src="assets/images/logo.svg" alt="Nexio" />
+        </div>
+
+        <div class="row g-0">
+          <div class="col-sm-4">
+            <div class="list-title">Company</div>
+            <div class="list-menu">
+              <a href="#" rel="noopener">About</a>
+              <a href="info@nexio.ge" target="_blank">info@nexio.ge</a>
+            </div>
+            <div class="social-icons">
+              <a href="#/" target="_blank" rel="noopener">
+                <img src="assets/images/icon/FacebookLogo.svg" alt="facebook"
+              /></a>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="assets/images/icon/InstagramLogo.svg" alt="instagram"
+              /></a>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="assets/images/icon/TwitterLogo.svg" alt="twitter"
+              /></a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="list-title">Support</div>
+            <div class="list-menu">
+              <a href="support@nexio.ge" target="_blank">support@nexio.ge</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="list-title">Legal</div>
+            <div class="list-menu">
+              <a href="#" rel="noopener">Terms of Use</a>
+              <a href="#" target="_blank">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
