@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Payme Landing Page</title>
+    <title>Risk Management</title>
     <link
       href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,400i,500,600,600i,700,900"
       rel="stylesheet"
@@ -59,63 +59,9 @@
 
     <!-- Begin page content -->
 
-    <main class="flex-shrink-0">
+    <main class="flex-shrink-0 risk-section">
       <div class="nav-top"></div>
       <section class="top-section">
-        <div class="top-section__left">
-          <h1>Everything to launch online acquiring services</h1>
-          <button
-            type="button"
-            class="btn btn-primary btn-blue"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Get started
-          </button>
-        </div>
-        <div class="top-section__right">
-          <img src="assets/images/getstarted-img.svg" />
-        </div>
-      </section>
-
-      <section class="main-section">
-        <div class="card-block card-block-system">
-          <div class="card-inner-left">
-            <img src="assets/images/MacBook-Pro16.svg" class="img-block" />
-          </div>
-          <div class="card-inner-right">
-            <h2 class="card-title">Merchant Management System</h2>
-            <p class="card-body">
-              Onboard merchants digitally, manage their lifecycle and equip with
-              necessary tools.
-            </p>
-            <a
-              href="merchant-management-system.html"
-              class="btn btn-dark btn-black"
-              >More</a
-            >
-          </div>
-        </div>
-
-        <div class="card-block card-block-payment">
-          <div class="card-inner-left">
-            <h2 class="card-title">Payment Gateway</h2>
-            <p class="card-body">
-              Our payment gateway enables acquirers to process high volume
-              transactions, covering all payment methods.
-            </p>
-            <a href="payment-gateway.html" class="btn btn-dark btn-black"
-              >More</a
-            >
-          </div>
-          <div class="card-inner-right">
-            <img
-              src="assets/images/cards.svg"
-              class="m-auto d-flex img-block"
-            />
-          </div>
-        </div>
-
         <div class="card-block text-bg-dark card-block-risk">
           <div class="card-inner-left">
             <img src="assets/images/transaction.svg" class="img-block" />
@@ -124,25 +70,39 @@
             <h2 class="card-title">
               Risk Management and transaction monitoring
             </h2>
-            <p class="card-body">
-              Manage transaction-related risks by predefined rules and monitor
-              them 24/7.
-            </p>
+          </div>
+        </div>
+      </section>
 
-            <a href="risk-management.html" class="btn-light btn-white">More</a>
+      <section class="main-section">
+        <div class="card-block card-block-payment">
+          <div class="card-inner-left">
+            <h2 class="card-title">
+              Screen transactions with easy-to-create rules
+            </h2>
+            <p class="card-body">
+              Catch unwanted activity by monitoring hundreds of data points
+              collected by the system. Is someone spending more than usual? Does
+              the shipping address name match the cardholder's name? Is this the
+              fourth order in an hour with the same card? Roll out custom rules
+              to track changes in behavior and block risks unique to your
+              business.
+            </p>
+          </div>
+          <div class="card-inner-right">
+            <img src="assets/images/risk-mang-img2.svg" class="img-block" />
           </div>
         </div>
 
-        <div class="card-block card-block-map">
+        <div class="card-block text-bg-dark card-block-risk">
           <div class="card-inner-left">
-            <h2 class="card-title">Our Roadmap</h2>
-            <p class="card-body">
-              We are always in progress to fit the market needs.
-            </p>
-            <a href="roadmap.html" class="btn btn-dark btn-black">More</a>
+            <img src="assets/images/risk-mang-img3.svg" class="img-block" />
           </div>
           <div class="card-inner-right">
-            <img src="assets/images/map.svg" class="m-auto d-flex img-block" />
+            <h2 class="card-title">
+              Decline risky payments and accept legitimate transactions with
+              confidence to maximize revenue
+            </h2>
           </div>
         </div>
       </section>
@@ -189,40 +149,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>

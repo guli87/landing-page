@@ -309,17 +309,181 @@ payment-supported */
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  padding: 8px 0px;
+  padding: 8px 0px 8px 32px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .method-list-group .method-list-group-item::before {
   content: "";
   background-image: url("../images/icon/checkbox-small.svg");
+  background-repeat: no-repeat;
   width: 18px;
   height: 19px;
-  display: inline-block;
-  margin-right: 16px;
+  position: absolute;
+  left: 0;
+}
+
+/* risk-management */
+.risk-section .top-section {
+  padding: 0 16px 0 16px;
+}
+
+.risk-section .card-block {
+  padding: 40px 24px;
+}
+
+.risk-section .top-section .card-title {
+  text-align: center;
+}
+
+.risk-section .top-section .card-block-risk .img-block {
+  width: 105.5%;
+}
+.risk-section .main-section .card-block-risk .img-block {
+  width: 82%;
+  margin-right: auto;
+  margin-top: 77px;
+}
+.risk-section .card-block-payment .img-block {
+  margin-top: 77px;
+  margin-left: auto;
+  width: 100%;
+}
+
+/* roadmap-section */
+
+.roadmap-section .payment-supported .method-list-group .method-list-group-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 16px 12px 16px 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.roadmap-section
+  .payment-supported
+  .method-list-group
+  .method-list-group-item::before {
+  content: "";
+  background-image: url("../images/icon/tag-right-small.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+}
+
+.roadmap-section .top-section__right {
+  text-align: center;
+}
+
+.roadmap-section .top-section__right img {
+  margin-left: auto;
+  margin-top: 0;
+  margin-right: auto;
+  height: 329px;
+}
+
+/* 
+about */
+.top-section__full {
+  padding: 0 24px;
+}
+.top-section__full h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.top-section__full p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.card-mission {
+  padding: 0;
+}
+.card-mission .card-inner-left {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 32px 32px 0px 0;
+  min-height: 340px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-mission .card-inner-right {
+  padding: 40px 24px 80px;
+}
+.card-mission .card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 0;
+}
+.card-mission .card-body {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+.card-mission .img-block {
+  height: 64px;
+}
+.card-global {
+  padding: 40px 24px;
+}
+.card-global .card-title {
+  margin-top: 0;
+}
+
+/* privacy-policy */
+.full-page .top-section {
+  height: auto;
+  padding-bottom: 72px;
+}
+.full-page .top-section {
+  padding: 0;
+}
+.full-page .top-section .top-section__full {
+  padding: 0 16px;
+  text-align: left;
+}
+.full-page .top-section .top-section__full h1 {
+  text-align: left;
+}
+.full-page .top-section .top-section__full p {
+  text-align: left;
+}
+.full-page .top-section .top-section__full h3 {
+  text-align: left;
+}
+.full-page .top-section .top-section__full p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  opacity: 0.84;
+  margin-bottom: 24px;
+}
+.full-page .top-section .top-section__full h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.84;
+  margin-bottom: 8px;
 }
 
 /* media query */
@@ -492,21 +656,141 @@ payment-supported */
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
-    padding: 16px 12px 16px 0;
+    padding: 16px 12px 16px 52px;
     display: flex;
     align-items: center;
+    position: relative;
   }
   .method-list-group .method-list-group-item::before {
     content: "";
     background-image: url("../images/icon/Checkbox.svg");
+    background-repeat: no-repeat;
     width: 32px;
     height: 33px;
-    display: inline-block;
-    margin-right: 16px;
+    position: absolute;
+    left: 0;
   }
-
   .card-block-networks .img-block {
     margin-right: 64px;
+  }
+  /* risk-management */
+  .risk-section .top-section {
+    padding: 95px 0 175px 0;
+    min-height: 863px;
+  }
+
+  .risk-section .card-block {
+    padding: 78px 64px;
+  }
+  .risk-section .top-section .card-title {
+    text-align: left;
+  }
+  .risk-section .top-section .card-block-risk .img-block {
+    width: auto;
+    margin-left: auto;
+  }
+  .risk-section .main-section .card-block-risk .img-block {
+    width: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .risk-section .card-block-payment .img-block {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+  /* roadmap-section */
+
+  .roadmap-section
+    .payment-supported
+    .method-list-group
+    .method-list-group-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    padding: 16px 12px 16px 32px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .roadmap-section
+    .payment-supported
+    .method-list-group
+    .method-list-group-item::before {
+    content: "";
+    background-image: url("../images/icon/tag-right.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+  }
+
+  /* about */
+  .top-section__full {
+    padding: 0 24px;
+  }
+  .top-section__full h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    opacity: 0.84;
+    text-align: left;
+    margin-bottom: 48px;
+  }
+
+  .top-section__full p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    opacity: 0.84;
+    text-align: left;
+  }
+  .card-mission {
+    padding: 0;
+  }
+  .card-mission .card-inner-left {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 32px 0px 0px 32px;
+    min-height: 573px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-mission .card-inner-right {
+    padding: 0 64px;
+  }
+
+  /* privacy-policy */
+  .full-page .top-section {
+    height: auto;
+    padding-bottom: 72px;
+  }
+  .full-page .top-section {
+    padding: 0;
+  }
+  .full-page .top-section .top-section__full {
+    padding: 0;
+  }
+  .full-page .top-section .top-section__full p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    opacity: 0.84;
+    margin-bottom: 48px;
+  }
+  .full-page .top-section .top-section__full h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    opacity: 0.84;
+    margin-bottom: 24px;
   }
   .footer {
     padding: 80px 0 198px 0;
