@@ -16,7 +16,6 @@ main > .container {
 nav {
   height: 90px;
   background-color: #fff;
-  padding: 0 !important;
 }
 
 .nav-top {
@@ -452,10 +451,11 @@ about */
 .full-page .top-section {
   height: auto;
   padding-bottom: 72px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-.full-page .top-section {
-  padding: 0;
-}
+
 .full-page .top-section .top-section__full {
   padding: 0 16px;
   text-align: left;
@@ -486,13 +486,88 @@ about */
   margin-bottom: 8px;
 }
 
+/* modal */
+.modal-dialog {
+  max-width: 750px;
+}
+.modal-content {
+  border-radius: 32px !important;
+}
+.modal-header {
+  border-bottom: none;
+  padding: 26px 26px 16px 0 !important;
+}
+.modal-title {
+  display: none;
+}
+.btn-close {
+  opacity: 1 !important;
+  padding: 0 !important;
+  width: 24px;
+  height: 24px;
+}
+.modal-body {
+  padding-top: 0;
+}
+.modal-body h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.form-block {
+  max-width: 358px;
+  margin: auto;
+}
+.form-block .col-form-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.0168em;
+  padding-top: 0;
+}
+
+.form-block .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 12px 12px;
+}
+.form-block .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.382);
+}
+
+.form-block textarea.form-control {
+  height: 106px;
+}
+
+.modal-footer {
+  border-top: none;
+  padding-bottom: 40px;
+  padding-top: 0;
+}
+
+.modal-footer .btn {
+  max-width: 358px;
+  width: 100%;
+  margin: auto;
+  background: #0c4aff;
+  border-radius: 39px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  padding: 12px 0;
+}
 /* media query */
 
 @media (min-width: 1056px) {
   nav {
     height: 138px;
     background-color: #fff;
-    padding: 0 !important;
   }
 
   .nav-top {
@@ -766,13 +841,15 @@ about */
   }
 
   /* privacy-policy */
+
   .full-page .top-section {
     height: auto;
     padding-bottom: 72px;
+    padding-top: 100px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
   }
-  .full-page .top-section {
-    padding: 0;
-  }
+
   .full-page .top-section .top-section__full {
     padding: 0;
   }
@@ -802,5 +879,35 @@ about */
 
   .footer .col-sm-4 {
     margin-bottom: 0;
+  }
+
+  /* modal */
+  .modal-body h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .form-block .col-form-label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0.0168em;
+    padding-top: 0;
+  }
+
+  .modal-header {
+    border-bottom: none;
+    padding: 40px 34px 16px 0 !important;
+  }
+
+  .modal-footer {
+    border-top: none;
+    padding-bottom: 80px;
+    padding-top: 24px;
   }
 }
