@@ -3,69 +3,107 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Payment gateway</title>
+    <title>About</title>
     <link
       href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,400i,500,600,600i,700,900"
       rel="stylesheet"
     />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/media.css" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column h-100">
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-light fixed-top">
-      <a class="navbar-brand" href="index.html"
-        ><img src="assets/images/logo.svg" alt="Nexio" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <button
-          type="button"
-          class="btn-close ms-auto"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="merchant-management-system.html"
-              >Merchant management system</a
+
+    <nav class="navbar navbar-light">
+      <div class="header-main-menu main-menu-mobile">
+        <div class="main-menu-mobile__buttons">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/images/logo.svg" alt="Nexio" />
+          </a>
+          <button class="main-menu-mobile__buttons__trigger" aria-label="Menu">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="payment-gateway.html">Payment gateway</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="risk-management.html">Risk Management</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="roadmap.html">Our Roadmap</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-        </ul>
+              <g clip-path="url(#clip0_580_20833)">
+                <path
+                  d="M0 6.52586C0.28125 5.68211 0.880312 5.39242 1.75031 5.3943C12.6147 5.40805 23.4794 5.41117 34.3444 5.40367C35.1338 5.40367 35.6663 5.75148 35.8631 6.39273C35.9258 6.59431 35.9422 6.80745 35.9109 7.01623C35.8796 7.22501 35.8016 7.42402 35.6826 7.59838C35.5636 7.77275 35.4067 7.91795 35.2237 8.02315C35.0406 8.12834 34.8362 8.1908 34.6256 8.20586C34.4859 8.21617 34.3444 8.21055 34.2047 8.21055C23.3866 8.21055 12.5688 8.21367 1.75125 8.21992C0.88125 8.21992 0.284063 7.93023 0 7.08742V6.52586Z"
+                  fill="black"
+                  fill-opacity="0.84"
+                />
+                <path
+                  d="M0 17.7543C0.28125 16.9106 0.880312 16.6209 1.75031 16.6218C12.6147 16.6368 23.4794 16.6403 34.3444 16.6321C35.1338 16.6321 35.6663 16.979 35.8631 17.6203C35.9258 17.8218 35.9422 18.035 35.9109 18.2438C35.8796 18.4525 35.8016 18.6516 35.6826 18.8259C35.5636 19.0003 35.4067 19.1455 35.2237 19.2507C35.0406 19.3559 34.8362 19.4183 34.6256 19.4334C34.4859 19.4437 34.3444 19.4381 34.2047 19.4381C23.3866 19.4381 12.5688 19.4412 1.75125 19.4475C0.88125 19.4475 0.284063 19.1578 0 18.3159V17.7543Z"
+                  fill="black"
+                  fill-opacity="0.84"
+                />
+                <path
+                  d="M0 28.9792C0.28125 28.1354 0.880312 27.8457 1.75031 27.8467C12.6147 27.8604 23.4794 27.8636 34.3444 27.8561C35.1338 27.8561 35.6663 28.2039 35.8631 28.8451C35.9274 29.0472 35.9449 29.2613 35.9144 29.4711C35.8838 29.6809 35.806 29.8811 35.6869 30.0565C35.5677 30.2319 35.4103 30.378 35.2264 30.4837C35.0426 30.5894 34.8372 30.652 34.6256 30.6667C34.4859 30.677 34.3444 30.6667 34.2047 30.6667C23.3866 30.6667 12.5688 30.6698 1.75125 30.6761C0.88125 30.677 0.28125 30.3854 0 29.5417V28.9792Z"
+                  fill="black"
+                  fill-opacity="0.84"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_580_20833">
+                  <rect width="36" height="36" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+
+        <div class="main-menu-mobile__backdrop"></div>
+
+        <div class="main-menu-mobile__sidebar">
+          <button class="main-menu-mobile__sidebar__close" aria-label="Close">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0.982414C0.03 0.912414 0.0625 0.84179 0.089375 0.77179C0.156551 0.60701 0.26062 0.45983 0.39358 0.341566C0.526541 0.223302 0.684851 0.137104 0.856339 0.0895989C1.02783 0.0420941 1.20792 0.0345484 1.38279 0.0675413C1.55765 0.100534 1.72261 0.173187 1.865 0.279914C1.96233 0.356802 2.05421 0.440335 2.14 0.529914C5.34833 3.73825 8.55667 6.94658 11.765 10.1549C11.8275 10.2174 11.8831 10.2974 11.9525 10.3812C12.0525 10.2862 12.12 10.2243 12.1844 10.1593C15.4152 6.93012 18.6444 3.70096 21.8719 0.47179C22.2113 0.13179 22.5969 -0.0338355 23.0763 0.0899145C23.262 0.137225 23.4332 0.229756 23.5745 0.359262C23.7158 0.488767 23.8229 0.651224 23.8862 0.832151C23.9495 1.01308 23.967 1.20685 23.9373 1.39621C23.9075 1.58557 23.8314 1.76462 23.7156 1.91741C23.6389 2.01487 23.5553 2.10676 23.4656 2.19241C20.2623 5.3945 17.0592 8.59637 13.8563 11.798C13.7906 11.8643 13.715 11.923 13.6206 12.0005C13.7037 12.0887 13.7644 12.1549 13.8275 12.218C17.0521 15.4426 20.2762 18.6666 23.5 21.8899C23.8862 22.2762 24.0625 22.7062 23.8706 23.2424C23.7256 23.6518 23.3994 23.8593 23.015 23.9999H22.55C22.1981 23.8868 21.9406 23.6462 21.6856 23.3905C18.5202 20.218 15.351 17.0485 12.1781 13.8818C12.1156 13.8193 12.0469 13.7568 11.9463 13.6599C11.8883 13.7427 11.8257 13.8222 11.7588 13.898C8.59583 17.0647 5.4325 20.2297 2.26875 23.393C2.01375 23.6487 1.75625 23.8893 1.40438 24.0018H0.9375C0.468125 23.8474 0.150625 23.5412 0 23.0643V22.5962C0.114375 22.2455 0.35375 21.9874 0.609375 21.7318C3.78187 18.5651 6.95229 15.396 10.1206 12.2243C10.1831 12.1618 10.2456 12.0937 10.3431 11.9918C10.2544 11.9284 10.1693 11.8602 10.0881 11.7874C6.92146 8.62408 3.75625 5.46075 0.5925 2.29741C0.3425 2.04741 0.11 1.79741 0 1.44991V0.982414Z"
+                fill="black"
+                fill-opacity="0.84"
+              />
+            </svg>
+          </button>
+
+          <ul class="main-menu-mobile__sidebar__items">
+            <li class="main-menu-mobile__sidebar__item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="merchant-management-system.html"
+                >Merchant management system</a
+              >
+            </li>
+            <li class="main-menu-mobile__sidebar__item">
+              <a class="nav-link" href="payment-gateway.html"
+                >Payment gateway</a
+              >
+            </li>
+            <li class="main-menu-mobile__sidebar__item">
+              <a class="nav-link" href="risk-management.html"
+                >Risk Management</a
+              >
+            </li>
+            <li class="main-menu-mobile__sidebar__item">
+              <a class="nav-link" href="roadmap.html">Our Roadmap</a>
+            </li>
+            <li class="main-menu-mobile__sidebar__item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
+    <!-- /.navigation__main -->
 
     <!-- Begin page content -->
 
@@ -159,7 +197,7 @@
             <div class="list-title">Legal</div>
             <div class="list-menu">
               <a href="terms-use.html" rel="noopener">Terms of Use</a>
-              <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+              <a href="privacy-policy.html">Privacy Policy</a>
             </div>
           </div>
         </div>
@@ -168,14 +206,6 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery-3.7.0.min.js"></script>
-    <script>
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-          $(".navbar").addClass("shrink");
-        } else {
-          $(".navbar").removeClass("shrink");
-        }
-      });
-    </script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
