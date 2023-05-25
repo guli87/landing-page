@@ -16,17 +16,59 @@ main > .container {
 nav {
   height: 90px;
   background-color: #fff;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
 }
-
+nav.shrink {
+  padding-top: 4px;
+  height: 70px;
+}
+nav.shrink img {
+  height: 20px;
+}
 .nav-top {
   padding-top: 90px;
+}
+.navbar-brand {
+  padding-left: 5%;
 }
 .navbar-brand img {
   height: 22px;
 }
-.navbar-expand-md .navbar-toggler {
+.offcanvas.offcanvas-end {
+  width: 289px;
+}
+.offcanvas-header {
+  padding: 0;
+}
+.offcanvas-header .btn-close {
+  margin: 36px 16px 0;
+  width: 16px;
+  height: 16px;
+}
+.offcanvas-body {
+  padding: 62px 24px 0 24px;
+}
+
+.offcanvas-body .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  padding: 12px 0;
+}
+.offcanvas-body .navbar-nav .nav-item:last-child .nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 24px;
+}
+.navbar-toggler {
   display: block;
   border: none;
+  padding: 0 5% 0 0;
+  transition: none !important;
 }
 .navbar-toggler:focus {
   box-shadow: none;
@@ -448,6 +490,15 @@ about */
 }
 
 /* privacy-policy */
+.full-page ul {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+.full-page ul li {
+  margin-bottom: 0;
+}
 .full-page .top-section {
   height: auto;
   padding-bottom: 72px;
@@ -568,8 +619,17 @@ about */
   nav {
     height: 138px;
     background-color: #fff;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+  }
+  nav.shrink {
+    padding-top: 4px;
+    height: 70px;
   }
 
+  nav.shrink img {
+    height: 20px;
+  }
   .nav-top {
     padding-top: 138px;
   }
@@ -583,6 +643,35 @@ about */
     height: 36px;
     background-image: url("../images/icon/menu.svg");
   }
+
+  .offcanvas.offcanvas-end {
+    width: 600px;
+  }
+  .offcanvas-header {
+    padding: 0;
+  }
+  .offcanvas-header .btn-close {
+    margin: 24px 24px 0;
+  }
+  .offcanvas-body {
+    padding: 62px 48px 0 48px;
+  }
+
+  .offcanvas-body .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 56px;
+    padding: 16px 0;
+  }
+  .offcanvas-body .navbar-nav .nav-item:last-child .nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    padding-top: 32px;
+  }
+
   .top-section {
     display: flex;
     align-items: center;
@@ -841,7 +930,15 @@ about */
   }
 
   /* privacy-policy */
-
+  .full-page ul {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+  }
+  .full-page ul li {
+    margin-bottom: 16px;
+  }
   .full-page .top-section {
     height: auto;
     padding-bottom: 72px;

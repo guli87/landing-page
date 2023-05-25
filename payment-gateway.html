@@ -13,21 +13,19 @@
   </head>
   <body class="d-flex flex-column h-100">
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="assets/images/logo.svg" alt="Nexio" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+    <nav class="navbar navbar-light fixed-top">
+      <a class="navbar-brand" href="index.html"
+        ><img src="assets/images/logo.svg" alt="Nexio" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </nav>
     <div
       class="offcanvas offcanvas-end"
@@ -36,25 +34,37 @@
       aria-labelledby="offcanvasRightLabel"
     >
       <div class="offcanvas-header">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
         <button
           type="button"
-          class="btn-close"
+          class="btn-close ms-auto"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">...</div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="merchant-management-system.html"
+              >Merchant management system</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="payment-gateway.html">Payment gateway</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="risk-management.html">Risk Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="roadmap.html">Our Roadmap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Begin page content -->
@@ -167,5 +177,15 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".navbar").addClass("shrink");
+        } else {
+          $(".navbar").removeClass("shrink");
+        }
+      });
+    </script>
   </body>
 </html>
